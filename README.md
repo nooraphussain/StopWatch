@@ -30,5 +30,5 @@ Styled with a dark gradient background and interactive buttons for a fun, modern
 
 1. Clone the repository:  
    ```bash
-   git clone <your-repo-url>
+   git clone [<your-repo-url>](https://github.com/nooraphussain/StopWatch.git)
    cd <your-project-folder>
