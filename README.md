@@ -1,9 +1,12 @@
 # React Stopwatch Mini-Project ⏱️
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://stop-watch-woad-omega.vercel.app/)
+
 A simple **stopwatch app** built with **React**, using only **`useState`**, **`useEffect`**, and **conditional rendering**.  
-Styled with a dark gradient background and interactive buttons for a fun, modern look.
+Styled with a dark gradient background, interactive buttons, and fun digital-style timer display.
 
 ---
+
 
 ## Features
 
