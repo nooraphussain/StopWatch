@@ -1,38 +1,179 @@
+/* Full page styling */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(135deg, #131d31, #1a2a4c);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Heading with clock icon */
+.stopwatch-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 5px; /* smaller gap */
+}
+h1 svg:hover {
+  transform: rotate(15deg);
+  transition: transform 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stopwatch-heading svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+
+.Format-time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;  /* aligns digits nicely with colon */
+  gap: 0;                 /* spacing handled by colon margin */
+  font-size: 6rem;
+  margin-top: 0;
+  font-weight: 900;
+  color: white;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-unit .value {
+  font-size: inherit;
+}
+
+.time-unit .label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.colon {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0 10px;
+  line-height: 1.7;
+}
+
+/* Timer display */
+.timer-display {
+  font-size: 4rem;      /* big timer digits */
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* Base button styles */
+button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;  /* space between icon and text */
+  transition: all 0.3s;
+}
+
+/* Start button */
+.start-btn {
+  background: #007bff;  /* blue */
+}
+
+.start-btn:hover {
+  background: #006ae6;
+}
+
+/* Stop button */
+.stop-btn {
+  background: #dc3545; /* red */
+}
+
+.stop-btn:hover {
+  background: #c82333;
+}
+
+/* Reset button */
+.reset-btn {
+  background: #6c757d; /* gray */
+}
+
+.reset-btn:hover {
+  background: #5a6268;
+}
+
+/* Lap button */
+.lap-btn {
+  background: #17a2b8; /* teal */
+}
+
+.lap-btn:disabled {
+  background: #3a4a7c;
+  cursor: not-allowed;
+}
+
+/* Buttons styling */
+button {
+  padding: 12px 25px;
+  font-size: 1.2rem;    /* bigger font */
+  font-weight: 700;     /* bold text */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #1f2e4d;   /* slightly lighter than background */
+  color: white;
+  transition: all 0.3s;
+  margin: 0 5px;
+}
+
+button:hover {
+  background: #2c3b66;   /* hover effect */
+}
+
+button:disabled {
+  background: #3a4a7c;
+  cursor: not-allowed;
+}
+
+
+/* Laps container */
+.laps-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers content horizontally */
+}
+
+/* Laps list */
+.laps-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: fit-content;   /* shrink wrap the list to content */
+}
+
+/* Each lap */
+.laps-container li {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent for contrast */
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0;
+  text-align: center;   /* center text in the li */
 }
