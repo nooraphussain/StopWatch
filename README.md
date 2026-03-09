@@ -38,11 +38,11 @@ Styled with a dark gradient background and interactive buttons for a fun, modern
 
 ## How It Works
 
-- **useState manages the timer (time), running state (running), and laps (laps).
-- **useEffect handles interval updates when the timer is running.
-- **Conditional rendering:
-- **Shows "Stop" or "Start" dynamically depending on the timer state
-- **Shows laps list only when laps exist
+- useState manages the timer (time), running state (running), and laps (laps).
+- useEffect handles interval updates when the timer is running.
+- Conditional rendering:
+- Shows "Stop" or "Start" dynamically depending on the timer state
+- Shows laps list only when laps exist
 
 
 ## File Structure
@@ -52,31 +52,31 @@ src/
 ├─ index.js      # React entry point
 
 
-- **Fun Styles & UX
-- **Dark gradient background: #131d31 → #1a2a4c
-- **Big bold timer digits with small labels underneath (HOURS, MINUTES, SECONDS, MS)
+- Fun Styles & UX
+- Dark gradient background: #131d31 → #1a2a4c
+- Big bold timer digits with small labels underneath (HOURS, MINUTES, SECONDS, MS)
 
 Colored buttons with icons:
-- **Start (blue ▶️), Stop (red ⏹), Reset (gray 🔄), Lap (teal 📝)
-- **Centered laps list with semi-transparent backgrounds
-- **Responsive design for clean layout on different screens
+- Start (blue ▶️), Stop (red ⏹), Reset (gray 🔄), Lap (teal 📝)
+- Centered laps list with semi-transparent backgrounds
+- Responsive design for clean layout on different screens
 
 
 
 ## Technologies Used
 
-- **React
-- **useState, useEffect hooks
-- **Conditional rendering
-- **CSS Flexbox, gradients, and modern styling
+- React
+- useState, useEffect hooks
+-Conditional rendering
+-CSS Flexbox, gradients, and modern styling
 
 
 ## Future Improvements
 
-- **Add sound effects for lap or stop events
-- **Add keyboard shortcuts for start/stop/reset/lap
-- **Add save/export laps functionality
-- **Enhance animations for timer and buttons
+-Add sound effects for lap or stop events
+-Add keyboard shortcuts for start/stop/reset/lap
+- Add save/export laps functionality
+- Enhance animations for timer and buttons
 
 ## License
 This project is open source and free to use for learning purposes.
